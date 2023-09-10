@@ -1,0 +1,8 @@
+html,
+body {
+	overflow-x: hidden;
+}
+
+.vh-90 {
+	height: 90vh !important
+}

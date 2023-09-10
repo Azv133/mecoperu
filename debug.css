@@ -1,0 +1,17 @@
+* { outline: 2px solid red }
+* * { outline: 2px solid green }
+* * * { outline: 2px solid orange }
+* * * * { outline: 2px solid blue }
+* * * * * { outline: 1px solid red }
+* * * * * * { outline: 1px solid green }
+* * * * * * * { outline: 1px solid orange }
+* * * * * * * * { outline: 1px solid blue }
+
+*:hover { outline: 2px dotted red }
+* *:hover { outline: 2px dotted green }
+* * *:hover { outline: 2px dotted orange }
+* * * *:hover { outline: 2px dotted blue }
+* * * * *:hover { outline: 1px dotted red }
+* * * * * *:hover { outline: 1px dotted green }
+* * * * * * *:hover { outline: 1px dotted orange }
+* * * * * * * *:hover { outline: 1px dotted blue }
