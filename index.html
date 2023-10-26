@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<title>
 		Meco
 	</title>
 	<!--Imports-->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+	<link
+ 	 rel="stylesheet"
+ 	 href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+	/>
+	
 	<!--Custom Styles-->
-	<link href="debug.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
+	<!--
+		<link href="debug.css" rel="stylesheet">
+	-->
+	
 	<!--Meta Tags -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
@@ -38,112 +55,156 @@
 	<!--Favicon-->
 
 </head>
+
 <body>
+	<!--Background-->
+	<div class="x-bg-container">
+		<div class="x-bg-circle1"></div>
+		<div class="x-bg-circle2"></div>
+	</div>
+
 	<!--Navbar-->
-	<nav class="navbar navbar-expand-md">
-		<div class="container-fluid">
-			<a class="navbar-brand fs-15em" href="/#">
-				<img src="https://placehold.co/250x50" alt="Meco"/>
-			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-				aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-		</div>
-		<div class="collapse navbar-collapse" id="navbarCollapse">
-			<ul class="navbar-nav ms-3">
-				<li class="nav-item">
-					<a class="nav-link text-nowrap" href="/#">
-						<p class="">
-							Servicios
-						</p>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-nowrap" href="/#">
-						<p class="">
-							Testimonios
-						</p>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-nowrap" href="/#">
-						<p class="">
-							¿Cómo Operamos?
-						</p>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link text-nowrap" href="/#">
-						<p class="">
-							Contactanos
-						</p>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+	<div class="container p-3">
+		<nav class="navbar navbar-expand-md">
+			<div class="container-fluid">
+				<a class="navbar-brand fs-15em" href="/#">
+					<img class="x_navbar_img" src="public\images\Meco logo negro.png" alt="Meco" />
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+					aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<ul class="navbar-nav ms-3">
+					<li class="nav-item me-4">
+						<a class="nav-link text-nowrap vertical-center" href="/#Servicios">
+							<p class="x_text_top mb-0">
+								Servicios
+							</p>
+						</a>
+					</li>
+					<li class="nav-item me-4">
+						<a class="nav-link text-nowrap vertical-center" href="/#Clientes">
+							<p class="x_text_top mb-0">
+								Clientes
+							</p>
+						</a>
+					</li>
+					<li class="nav-item me-4">
+						<a class="nav-link text-nowrap vertical-center" href="/#Operaciones">
+							<p class="x_text_top mb-0">
+								¿Cómo Operamos?
+							</p>
+						</a>
+					</li>
+					<li class="nav-item my-auto">
+						<a class="btn x_btn x_btn_top" href="/#Contacto">
+							Contáctanos
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 
 	<!--Hero-->
-	<div class="container p-3 text-center">
-		<div class="container vh-90 text-center">
-			<div class="row h-100 align-items-center">
-				<div class="col-12 col-lg-6 p-3">
-					<h1>
-						TEXTO GRANDE QUE TENDRÁ UN MENSAJE
-					</h1>
-					<h2>
-						Texto más pequeño que tendra el segundo mensaje en 2 lineas
-					</h2>
-					<a class="btn btn-danger" href="#" role="button">
-						Recibe Tu Cotización Gratis Hoy >>
-					</a>
+	<div class="container mt-5">
+		<div class="col-12">
+			<div class="container text-center">
+				<div class="row align-items-center">
+					<div class="col-6 col-lg-6">
+						<div class="text-start mb-3">
+							<h1>
+								POSICIONA TU MARCA
+								Y CAPTA MÁS CLIENTES
+							</h1>
+							<h3>
+								Consigue Los Mejores Productos de Imprenta.
+								Regalos Publicitarios y Merchandising En Un Lugar
+							</h3>
+						</div>
+						<div class="mb-5 center-content">
+							<a class="btn x_btn x_btn_bg" href="#" role="button">
+								Recibe Tu Cotización Gratis Hoy >>
+							</a>
+						</div>
+						<div class="d-flex">
+							<p class="x_text_check me-4">Valoramos tu tiempo</p>
+							<p class="x_text_check">Calidad garantizada</p>
+						</div>
+					</div>
+
+					<div class="col-6 col-lg-6">
+						<div class="swiper swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img src="public\images\carousel\carousel 1.png" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="public\images\carousel\carousel 2.png" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="public\images\carousel\carousel 3.png" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="public\images\carousel\carousel 4.png" alt="">
+								</div>
+								<div class="swiper-slide">
+									<img src="public\images\carousel\carousel 5.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
 	</div>
 
+
+
 	<!--Servicios-->
-	<div class="container p-3 text-center">
+	<div class="container p-3 text-center mb-5" id="Servicios">
 		<div class="row p-3 mb-3">
-			<h1>
+			<h4>
 				¿Que Servicio Ofrecemos?
-			</h1>
+			</h4>
 			<h2>
 				¡Tú Marca en un Solo Lugar!
 			</h2>
 		</div>
 
 
-		<div class="row g-2 mb-3">
+		<div class="row g-4 mb-5">
 			<a href="#" class="col-12 col-lg-6 text-reset text-decoration-none">
-				<div class="row p-3">
-					<img src="https://placehold.co/400x200" alt=""/>
-					<p>
+				<div class="x_card_sm">
+					<img src="public\images\diseñografico.png" alt="" />
+					<p class="x_text_card">
 						Diseño Gráfico
 					</p>
 				</div>
 			</a>
 			<a href="#" class="col-12 col-lg-6 text-reset text-decoration-none">
-				<div class="row p-3">
-					<img src="https://placehold.co/400x200" alt="" />
-					<p>
+				<div class="x_card_sm">
+					<img src="public\images\imprenta.png" alt="" />
+					<p class="x_text_card">
 						Imprenta
 					</p>
 				</div>
 			</a>
 			<a href="#" class="col-12 col-lg-6 text-reset text-decoration-none">
-				<div class="row p-3">
-					<img src="https://placehold.co/400x200" alt="" />
-					<p>
-						Gigantografia
+				<div class="x_card_sm">
+					<img src="public\images\gigantografia.png" alt="" />
+					<p class="x_text_card">
+						Gigantografía
 					</p>
 				</div>
 			</a>
 			<a href="#" class="col-12 col-lg-6 text-reset text-decoration-none">
-				<div class="row p-3">
-					<img src="https://placehold.co/400x200" alt="" />
-					<p>
+				<div class="x_card_sm">
+					<img src="public\images\merchandising_card.png" alt="" />
+					<p class="x_text_card">
 						Merchandising
 					</p>
 				</div>
@@ -151,8 +212,8 @@
 		</div>
 
 		<div class="row p-3">
-			<div>
-				<a class="btn btn-danger" href="#" role="button">
+			<div class="center-content">
+				<a class="btn x_btn x_btn_nm" href="#" role="button">
 					Recibe Tu Cotización Gratis Hoy >>
 				</a>
 			</div>
@@ -160,224 +221,270 @@
 	</div>
 
 	<!--Testimonios-->
-	<div class="container text-center p-3 mb-3">
+	<div class="container text-center p-3 mb-5" id="Clientes">
 		<div class="row p-3 mb-3">
-			<h1>
+			<h4>
 				Nuestros Clientes Nos Respaldan
-			</h1>
+			</h4>
 			<h2>
 				Confía En Nosotros
 			</h2>
 		</div>
 		<div class="row p-3 mb-3">
-			<img src="https://placehold.co/800x450" alt="" />
+			<img src="public\images\Clientes.png" alt="" />
 		</div>
-		<div class="row p-3 mb-3">
-			<div>
-				<a class="btn btn-danger" href="#" role="button">
-					Recibe Tu Cotización Gratis Hoy >>
-				</a>
-			</div>
-		</div>
-	</div>
-
-	<!---->
-	<div class="container p-3 mb-3 text-center">
-		<div class="row p-3">
-			<h2>
-				¿Cansado de Lidiar con Varios Proveedores?...
-			</h2>
-			<h1>
-				En Meco manejamos Todo lo que Necesitas para Posicionar a tú Marca
-			</h1>
-			<h2>
-				¡Todo en un conveniente Lugar!
-			</h2>
-		</div>
-	</div>
-	
-	<!---->
-	<div class="container p-3 mb-3">
-		
-		<!--1-->
-		<div class="container mb-3">
-			<div class="row">
-				<div class="col-12 col-lg-6 p-3">
-					<h1>
-						Textoooo 1
-					</h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae lectus lorem. Suspendisse feugiat sollicitudin
-						ipsum vel porttitor. Sed ultricies, justo molestie tincidunt pellentesque, massa sapien euismod quam, quis tempus urna
-						felis vel leo. Proin non fringilla massa. Phasellus dictum rhoncus felis sit amet pellentesque. Nullam mollis eu mi a
-						interdum. Praesent eleifend leo neque, eget tincidunt lorem volutpat eu.
-					</p>
-					<h2>
-						Textoooooo
-					</h2>
-					<ul>
-						<li>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae lectus lorem.
-						</li>
-						<li>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae lectus lorem.
-						</li>
-						<li>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae lectus lorem.
-						</li>
-					</ul>
-				</div>
-
-				<div class="col-12 col-lg-6 p-3 text-center">
-					<div class="row">
-						<img class="mb-3" src="https://placehold.co/450x400" alt="" />
-					</div>
-					<a class="btn btn-danger" href="#" role="button">
-						Recibe Tu Cotización Gratis Hoy >>
-					</a>
-				</div>
-			</div>
-		</div>
-
-		<!--2-->
-		<div class="container mb-3">
-			<div class="row">
-				<div class="col-12 col-lg-6 p-3 order-lg-last">
-					<h1>
-						Textoooo 2
-					</h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae lectus lorem. Suspendisse feugiat
-						sollicitudin
-						ipsum vel porttitor. Sed ultricies, justo molestie tincidunt pellentesque, massa sapien euismod quam,
-						quis tempus urna
-						felis vel leo. Proin non fringilla massa. Phasellus dictum rhoncus felis sit amet pellentesque. Nullam
-						mollis eu mi a
-						interdum. Praesent eleifend leo neque, eget tincidunt lorem volutpat eu.
-					</p>
-					<h2>
-						Textoooooo
-					</h2>
-					<ul>
-						<li>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae lectus lorem.
-						</li>
-						<li>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae lectus lorem.
-						</li>
-						<li>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae lectus lorem.
-						</li>
-					</ul>
-				</div>
-				<div class="col-12 col-lg-6 p-3 text-center">
-					<div class="row">
-						<img class="mb-3" src="https://placehold.co/450x400" alt="" />
-					</div>
-					<a class="btn btn-danger" href="#" role="button">
-						Recibe Tu Cotización Gratis Hoy >>
-					</a>
-				</div>
-			</div>
-		</div>
-
-		<!--3-->
-		<div class="container mb-3">
-			<div class="row">
-				<div class="col-12 col-lg-6 p-3">
-					<h1>
-						Textoooo 3
-					</h1>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae lectus lorem. Suspendisse feugiat
-						sollicitudin
-						ipsum vel porttitor. Sed ultricies, justo molestie tincidunt pellentesque, massa sapien euismod quam,
-						quis tempus urna
-						felis vel leo. Proin non fringilla massa. Phasellus dictum rhoncus felis sit amet pellentesque. Nullam
-						mollis eu mi a
-						interdum. Praesent eleifend leo neque, eget tincidunt lorem volutpat eu.
-					</p>
-					<h2>
-						Textoooooo
-					</h2>
-					<ul>
-						<li>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae lectus lorem.
-						</li>
-						<li>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae lectus lorem.
-						</li>
-						<li>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae lectus lorem.
-						</li>
-					</ul>
-				</div>
-				<div class="col-12 col-lg-6 p-3 text-center">
-					<div class="row">
-						<img class="mb-3" src="https://placehold.co/450x400" alt="" />
-					</div>
-					<a class="btn btn-danger" href="#" role="button">
-						Recibe Tu Cotización Gratis Hoy >>
-					</a>
-				</div>
-			</div>
-		</div>
-
-	</div>
-
-	<!---->
-	<div class="container mb-3 text-center">
-		<div class="row mb-3 p-3">
-			<h2>
-				No esperes más...
-			</h2>
-			<h1>
-				Que tus clientes te reconozcan por la calidad de tus productos
-			</h1>
-		</div>
-
-		<div class="row mb-3 p-3">
-			<div>
-				<a class="btn btn-danger" href="#" role="button">
-					Recibe Tu Cotización Gratis Hoy >>
-				</a>
-			</div>
-		</div>
-
-		<div class="row mb-3 p-3 justify-content-end text-center">
-			<div class="col col-lg-4 p-3">
-				<div>
-					<a class="col btn btn-danger" href="#" role="button">
-						¿Alguna Duda? Contáctanos
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<footer class="container mb-3 text-center">
 		<div class="row">
-			<div class="col p-3">
-				<p>© 2023 Meco</p>
-				<p>Lima - Perú</p>
-				<a href="mailto:contacto@mecoperu.com">contacto@mecoperu.com</a>
-			</div>
+			<p class="x-text-sm-bold">Próximamente tú</p>
 		</div>
-
-		<div class="row justify-content-end">
-			<div class="col col-lg-4 p-3">
-				<a href="https://IgnacioZevallos.com/" target="_blank">
-					Desarrollado por ijzm
+		<div class="row p-3 mb-3 mt-1">
+			<div class="center-content">
+				<a class="btn x_btn x_btn_nm" href="#" role="button">
+					Recibe Tu Cotización Gratis Hoy >>
 				</a>
 			</div>
 		</div>
+	</div>
 
-		<div>
-			
+
+	<!---->
+	<div class="container p-3 mb-3 text-center x-container-m" id="Operaciones">
+		<div class="row p-3">
+			<h4 class="mb-4">
+				¿Cansado de Lidiar con Varios Proveedores?
+			</h4>
+			<h2 class="mb-4">
+				Manejamos Todo Para Posicionar Tu Marca
+			</h2>
+			<h4>
+				¡Todo en un conveniente Lugar!
+			</h4>
+		</div>
+		<div class="x_downArrow_box">
+			<img src="public\icons\flecha abajo 1.svg" alt="" height="30px" width="30px" class="x_me-37">
+			<img src="public\icons\flecha abajo 1.svg" alt="" height="30px" width="30px">
+			<img src="public\icons\flecha abajo 1.svg" alt="" height="30px" width="30px" class="x_ms-37">
+		</div>
+	</div>
+
+
+	<!--SECCIÓN DE CARDS-->
+	<div class="container mb-lg-5 x_card x_card">
+		<div class="row">
+			<div class="col-12 col-lg-7 p-3 order-lg-first" style="max-width: 525px;">
+				<h1>
+					Gigantografía
+				</h1>
+				<p class="x_text_bg">
+					Las campañas con gigantografías dan mayores ganancias y ofrecen un retorno de inversión mayor a las
+					tradicionales.
+				</p>
+				<h2>
+					Tu Imagen A Gran Escala
+				</h2>
+				<ul class="x_text_sm x_list">
+					<li>
+						Anuncia a lo grande e influye sobre la desición de compra de tu cliente objetivo.
+					</li>
+					<li>
+						Amplía el alcance de tu marca, promueve tus servicios y productos a más personas
+					</li>
+					<li>
+						La imagen de tu marca en todas partes decorando eventos, stands y paredes.
+					</li>
+				</ul>
+
+				<p>
+				<div class="x_title_sm">Trabajamos: </div>
+				<div class="x_stext_sm">Viniles - Banners - Vallas Publicitarias - Lonas - Photocalls</div>
+				</p>
+			</div>
+			<div class="col-12 col-lg-5 p-3 order-lg-last">
+				<img class="x_card_img" src="public\images\Gigantografía muestra.png" alt="" />
+				<a class="btn x_btn x_btn_bx" href="#" role="button">
+					Recibe Tu Cotización Gratis Ahora >>
+				</a>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="container mb-lg-5 x_card">
+		<img src="public\icons\arrow-curved-line-art-illustration-png 1.png" alt="" class="x-arrow-right">
+		<div class="row">
+			<div class="col-12 col-lg-7 p-4 order-lg-last" style="max-width: 525px;">
+				<h1>
+					Diseño Gráfico
+				</h1>
+				<p class="x_text_bg">
+					Aumentar tus ventas es consecuencia de una marca sólida. Atrae más clientes con diseños llamativos
+					que los acerquen a tu marca. </p>
+				<h2>
+					Que Tus Clientes Te Recuerden
+				</h2>
+				<ul class="x_text_sm x_list">
+					<li>
+						Que tu producto no pase desapercibido. Potencia tu marca con nuestros diseños para atraer la
+						atención que se merece. </li>
+					<li>
+						Nos encargamos del diseño por ti para que puedas invertir tu tiempo en lo que realmente importa:
+						tus proyectos. </li>
+					<li>
+						Transforma el interés de tus clientes en ventas reales con nuestros diseños pensados para ti y
+						tu marca. </li>
+				</ul>
+
+				<p>
+				<div class="x_title_sm">Diseñamos: </div>
+				<div class="x_stext_sm">Brochures - Catálogos - Logotipos - Ilustraciones - Packing</div>
+				</p>
+			</div>
+			<div class="col-12 col-lg-5 p-0 order-lg-first">
+				<img class="x_card_img" src="public\images\laptop.png" alt="" />
+				<a class="btn x_btn x_btn_bx" href="#" role="button">
+					Recibe Tu Cotización Gratis Ahora >>
+				</a>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="container mb-lg-5 x_card">
+		<img src="public\icons\arrow-curved-line-art-illustration-png 3.png" alt="" class="x-arrow-left">
+		<div class="row">
+			<div class="col-12 col-lg-7 p-3 order-lg-first" style="max-width: 525px;">
+				<h1>
+					Imprenta
+				</h1>
+				<p class="x_text_bg">
+					Contamos con la maquinaria más moderna para darte productos de calidad a precio de proveedor
+					directo. </p>
+				<h2>
+					Crea Una Impresión Duradera
+				</h2>
+				<ul class="x_text_sm x_list">
+					<li>
+						Haz que tus proyectos reflejen profesionalismo y distinción gracias a la calidad de la impresión
+						y acabados de primera. </li>
+					<li>
+						Despierta la curiosidad de tus clientes con colores vibrantes que destacan en tus materiales
+						impresos. </li>
+					<li>
+						Tu elección de confianza para prouectos de calidad, siempre listos para tu siguiente proyecto.
+					</li>
+				</ul>
+
+				<p>
+				<div class="x_title_sm">Imprimimos: </div>
+				<div class="x_stext_sm">Tarjetas - Folletos - Afiches - Catálogos - Volantes - Libros - Revistas</div>
+				</p>
+			</div>
+			<div class="col-12 col-lg-5 p-3 order-lg-last">
+				<img class="x_card_img" src="public\images\Paper Sheet Mockup mia 2.png" alt="" />
+				<a class="btn x_btn x_btn_bx" href="#" role="button">
+					Recibe Tu Cotización Gratis Ahora >>
+				</a>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<div class="container mb-5 x_card">
+		<img src="public\icons\arrow-curved-line-art-illustration-png 1.png" alt="" class="x-arrow-right">
+		<div class="row">
+			<div class="col-12 col-lg-7 p-4 order-lg-last" style="max-width: 525px;">
+				<h1>
+					Merchandising
+				</h1>
+				<p class="x_text_bg">
+					Que tus clientes te recuerden es la clave para que vuelvan. Haz que te tengan presente con tus
+					regalos publicitarios.
+				</p>
+				<h2>
+					Haz Que Tus Clientes Vuelvan
+				</h2>
+				<ul class="x_text_sm x_list">
+					<li>
+						Haz que los clientes comenten sobre la buena calidad de tus productos de merchandising.
+					</li>
+					<li>
+						Sorprende con tus regalos publicitarios y confírmales que tomaron la decisión correcta.
+					</li>
+					<li>
+						Destaca con productos personalizados que dejen una impresión duradera para que los clientes
+						vuelvan una y otra vez.
+					</li>
+				</ul>
+
+				<p>
+				<div class="x_title_sm">Producimos: </div>
+				<div class="x_stext_sm">Lapiceros - Tazas - Fotochecks - Tomatodos -Bolsas - Imantados</div>
+				</p>
+			</div>
+			<div class="col-12 col-lg-5 p-0 order-lg-first">
+				<img class="x_card_img mb-4" src="public\images\mechandising.png" alt="" />
+				<a class="btn x_btn x_btn_bx" href="#" role="button">
+					Recibe Tu Cotización Gratis Ahora >>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container p-3 mb-3 text-center">
+		<div class="x_downArrow_box">
+			<img src="public\icons\flecha abajo 1.svg" alt="" height="30px" width="30px" class="x_me-37">
+			<img src="public\icons\flecha abajo 1.svg" alt="" height="30px" width="30px">
+			<img src="public\icons\flecha abajo 1.svg" alt="" height="30px" width="30px" class="x_ms-37">
+		</div>
+	</div>
+
+	</div>
+
+
+
+	<div class="container x_margin_end text-center">
+		<div class="center-content">
+			<div class="row p-3 x-container-m2">
+				<h4>
+					No esperes más...
+				</h4>
+				<h2>
+					Que Tus Clientes Te Reconozcan Por La Calidad De Tus Productos
+				</h2>
+			</div>
+		</div>
+
+		<div class="row mb-3 p-3">
+			<div class="center-content">
+				<a class="btn x_btn x_btn_lg" href="#" role="button">
+					Recibe Tu Cotización Gratis Hoy >>
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="x-footer" id="Contacto">
+		<div class="">
+			<div class="row mt-3">
+				<div class="col-md-6 text-center">
+					<img src="public\images\meco logo blanco.png" alt="Meco Logo" class="img-fluid mb-3">
+					<p class="x-text-footer">Copyright 2023 Meco</p>
+					<p class="x-text-footer">Lima - Perú</p>
+				</div>
+				
+				<div class="col-md-6 text-center">
+					<p class="x-text-footer" style="margin-bottom: 0px;">Escríbenos:</p>
+					<a href="mailto:contacto@mecoperu.com" class="x-text-footer-bold" style="margin-bottom: 0px;">contacto@mecoperu.com</a>
+					<p class="x-text-footer mt-3" style="margin-bottom: 0px;">Llámanos:</p>
+					<p class="x-text-footer-bold" style="margin-bottom: 0px;">(01) 3775232</p>
+					<p class="x-text-footer" style="margin-bottom: 0px;">9 am - 5 pm</p>
+				</div>
+			</div>
 		</div>
 	</footer>
 
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="script.js"></script>
 </body>
+
 </html>
-
-
