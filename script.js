@@ -1,4 +1,3 @@
-console.log('')
 var swiper = new Swiper(".swiper", {
     slidesPerView: 1,
     spaceBetween: 420,
