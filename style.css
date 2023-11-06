@@ -539,6 +539,12 @@ p{
 	.x_card_sm {
 		margin-left: auto;
 		margin-right: auto;
+		overflow: auto;
+	}
+
+	.x_card_sm img{
+		max-width: 90%;
+		height: auto;
 	}
 	
 	.center-content-991{
