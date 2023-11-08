@@ -513,6 +513,10 @@ p{
 	width: 542px;
 }
 
+.x-col-6-card{
+	width: 375px;
+}
+
 @media (min-width: 992px) {
 	.row > .col-lg-6:nth-child(odd) .x_card_sm {
 	  margin-left: auto;
@@ -568,6 +572,8 @@ p{
 		justify-content: left;
 		height: 100%;
 	}
+
+	
 }
 
 @media only screen and (max-width: 700px){
@@ -590,7 +596,13 @@ p{
 	}
 
 	.swiper-slide{
-		margin-bottom: 50px;
+		width: 400px;
+		max-width: 100%;
+		height: auto;
+		position: relative;
+	}
+
+	.swiper-slide-card{
 		width: 400px;
 		height: 400px;
 		position: relative;
@@ -681,5 +693,9 @@ p{
 	
 	.x_text_card_sm1{
 		white-space: wrap;
+	}
+
+	.x-col-6-card{
+		width: 100%;
 	}
 }
