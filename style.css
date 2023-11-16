@@ -6,8 +6,8 @@
 	--blue: #000459;
 	--darkBlue: #1D2E3B;
 	--darkBlue-secondary: #042C54;
-	--lightBlueBorder: #00628B;
-	--lightBlue: #11ADEF;
+	--lightBlueBorder: #18A4DE;
+	--lightBlue: #1CBCFF;
 	--gray: #4D5256;
 	--bgColor: #F4F9FC;
 	--bg-light: #CFE8F6;
@@ -15,10 +15,15 @@
 	/*FONT SIZE*/
 	--fontSuperBg: 64px;
 	--fontBg1: 46px;
-	--fontBg2: 32px;
+	--fontBg2: 40px;
 	--fontMd1: 24px;
-	--fontMd2: 20px;
+	--fontMd2: 25px;
+	--fontMd3: 20px;
 	--fontSm1: 16px;
+	--fontSm2: 18px;
+
+	/*FONT FAMILIES*/
+	--fontButtons: "Substance W00 Black";
 }
 
 .vh-90 {
@@ -141,15 +146,51 @@ p{
 
 
 .x_btn{
-	border-radius: 10px;
+	border-radius: 3px;
 	border: 1px solid var(--lightBlueBorder);
 	background: var(--lightBlue);
 	color: var(--whiteBlue);
 	text-align: center;
 	font-size: var(--fontMd2);
+	font-family: var(--fontButtons);
 	font-style: normal;
 	font-weight: 900;
 	line-height: normal;
+	letter-spacing: -0.26px;
+	letter-spacing: 1.3px;
+	flex-shrink: 0;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.x_btn2{
+	border-radius: 3px;
+	border: 1px solid var(--lightBlueBorder);
+	background: var(--lightBlue);
+	color: var(--whiteBlue);
+	text-align: center;
+	font-size: var(--fontMd3);
+	font-family: var(--fontButtons);
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+	letter-spacing: -0.26px;
+	letter-spacing: 1.3px;
+	flex-shrink: 0;
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.x_btn3{
+	border-radius: 3px;
+	border: 1px solid var(--lightBlueBorder);
+	background: var(--lightBlue);
+	color: var(--whiteBlue);
+	text-align: center;
+	font-size: var(--fontSm2);
+	font-family: var(--fontButtons);
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+	letter-spacing: -0.26px;
 	letter-spacing: 1.3px;
 	flex-shrink: 0;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -165,7 +206,7 @@ p{
 
 .x_btn_bg{
 	display: flex;
-	width: 450px;
+	width: 500px;
 	height: 80px;
 	flex-direction: column;
 	justify-content: center;
@@ -173,7 +214,7 @@ p{
 
 .x_btn_bx{
 	display: flex;
-	width: 344px;
+	width: 345px;
 	height: 74px;
 	flex-direction: column;
 	justify-content: center;
@@ -249,6 +290,15 @@ p{
 	color: var(--white);
 	text-align: right;
 	font-size: var(--fontMd2);
+	font-style: normal;
+	font-weight: 200;
+	line-height: normal;
+}
+
+.x_text_footer1{
+	color: var(--white);
+	text-align: right;
+	font-size: var(--fontMd3);
 	font-style: normal;
 	font-weight: 200;
 	line-height: normal;
@@ -431,15 +481,15 @@ p{
 	line-height: normal;
 	position: absolute;
 	bottom: 1px;
-	right: 0;
-	margin-right: 21px;
+	left: 50%;
+  	transform: translateX(-50%);
 }
 
 .x-text-footer{
 	color: var(--white);
 	font-size: var(--fontMd1);
 	font-style: normal;
-	font-weight: 600;
+	font-weight: 400;
 	line-height: normal;
 }
 
@@ -517,6 +567,18 @@ p{
 	width: 375px;
 }
 
+.x_home_btn{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 1%;
+	bottom: 4.8%;
+}
+
+.x-content{
+	position: relative;
+}
+
 @media (min-width: 992px) {
 	.row > .col-lg-6:nth-child(odd) .x_card_sm {
 	  margin-left: auto;
@@ -525,6 +587,7 @@ p{
 	.row > .col-lg-6:nth-child(even) .x_card_sm {
 	  margin-right: auto;
 	}
+
 }
 
 
@@ -563,6 +626,10 @@ p{
 		margin-bottom: 20px;
 		margin-left: 0px;
 	}
+
+	.x_home_btn{
+		bottom: 3.3%;
+	}
 }
 
 @media (max-width: 766px){
@@ -572,7 +639,9 @@ p{
 		justify-content: left;
 		height: 100%;
 	}
-
+	.x_home_btn{
+		bottom: 3.8%;
+	}
 	
 }
 
@@ -583,8 +652,10 @@ p{
 		--fontBg1: 36px;
 		--fontBg2: 20px;
 		--fontMd1: 18px;
-		--fontMd2: 14px;
+		--fontMd2: 18px;
+		--fontMd3: 18px;
 		--fontSm1: 14px;
+		--fontSm2: 14px;
 	}
 
 	.x_btn_top{
@@ -697,5 +768,11 @@ p{
 
 	.x-col-6-card{
 		width: 100%;
+	}
+
+	.x_home_btn{
+		right: 0%;
+		left: 43%;
+		bottom: 4%;
 	}
 }
