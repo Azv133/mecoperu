@@ -772,7 +772,8 @@ p{
 
 	.x_home_btn{
 		right: 0%;
-		left: 43%;
+		left: 50%;
+		transform: translateX(-50%);
 		bottom: 4%;
 	}
 }

@@ -1,11 +1,24 @@
-var swiper = new Swiper(".swiper", {
+var swiper = new Swiper(".swiperGeneral", {
     slidesPerView: 1,
     spaceBetween: 420,
     grabCursor: false,
     speed: 800,
     loop: true,
     autoplay: {
-        delay: 5000,
+        delay: 1800,
+        disableOnInteraction: false,
+    },
+});
+
+
+var swiper = new Swiper(".swiperCard", {
+    slidesPerView: 1,
+    spaceBetween: 420,
+    grabCursor: false,
+    speed: 800,
+    loop: true,
+    autoplay: {
+        delay: 3500,
         disableOnInteraction: false,
     },
 });
